@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+
+  printf("Welcome to our arithmetic suit calculator !(Version C) \n Uo = \n n= \n q= \n ");
+
+  float a, b, c;
+
+  scanf("%f %f %f", &a, &b, &c);
+
+  float result;
+
+  result = a + (c * b);
+
+  printf(" \n Result: %f", result);
+
+  return 0;
+
+}
