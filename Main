@@ -1,18 +1,31 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
 
-  printf("Welcome to our arithmetic suit calculator !(Version C) \n Uo = \n n= \n q= \n ");
-
+  printf("Welcome to our arithmetic and geometric suit calculator !(Version C) \n Type 1 for geometric and 2 for arithmetic \n ");
+  int ask;
   float a, b, c;
-
-  scanf("%f %f %f", &a, &b, &c);
-
   float result;
+  scanf("%d",&ask);
+  switch(ask){
+    case 1:
+      printf("\nGeometric :\n Uo = \n n= \n q= \n ");
+      scanf("%f %f %f", &a, &b, &c);
+      result = a * pow(c,b);
+      printf(" \n Result: %f", result);
+      break;
+    case 2:
+      printf("\nArithmetic :\n Uo = \n n= \n q= \n ");
+      scanf("%f %f %f", &a, &b, &c);
+      result = a + (c * b);
+      printf(" \n Result: %f", result);
+      break;
+    default:
+      printf("\nWrong value retry again!");
+  }
+  
 
-  result = a + (c * b);
-
-  printf(" \n Result: %f", result);
 
   return 0;
 
